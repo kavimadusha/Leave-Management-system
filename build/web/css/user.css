@@ -1,0 +1,179 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 25, 2021, 11:58:40 PM
+    Author     : Raushan PC
+*/
+h1{
+    color: #021E2E;
+    margin-left: -200px;
+}
+body {
+margin: 0;
+font-family: "Lato", sans-serif;
+}
+
+
+
+.sidebar {
+margin: 0;
+padding: 0;
+width: 200px;
+background-color: #021E2E;
+position: fixed;
+height: 100%;
+overflow: auto;
+}
+
+
+
+.sidebar a {
+display: block;
+color: white;
+padding: 16px;
+text-decoration: none;
+}
+
+.sidebar a.active {
+background-color: #1675AA;
+color: white;
+}
+
+
+
+.sidebar a:hover:not(.active) {
+background-color: #555;
+color: white;
+}
+
+
+
+div.content {
+margin-left: 200px;
+padding: 1px 16px;
+height: 1000px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+.sidebar {
+width: 100%;
+height: auto;
+position: relative;
+}
+.sidebar a {float: left;}
+div.content {margin-left: 0;}
+}
+
+
+
+@media screen and (max-width: 400px) {
+.sidebar a {
+text-align: center;
+float: none;
+}
+}
+
+.logout{
+    background-color:#021E2E;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-top: 3px;
+    float: right;
+}
+ 
+.logout:hover {
+    background-color: #1675AA;
+    color: white;
+}
+
+.submit{
+    background-color:#021E2E;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+ 
+.submit:hover {
+    background-color: green;
+    color: white;
+}
+
+.reset{
+    background-color:#021E2E;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+ 
+.reset:hover {
+    background-color: red;
+    color: white;
+}
+
+.accept{
+    color: green;
+}
+
+.decline{
+    color: red;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#opt{
+    width: 70%;
+}
+
+#emp td,#emp th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#emp th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #1675AA;
+    color: white;
+}
+
+#emp tr:nth-child(even){
+    background-color:#7EA6BD;
+}
+
+#emp tr:hover{
+    background-color:darkgray
+}
+#ipt{
+    width: 600px;
+    height: 20px;
+}
